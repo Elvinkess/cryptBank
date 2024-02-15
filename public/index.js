@@ -26,3 +26,12 @@ ws_btc.onmessage = (event) =>{
     btcPrice.style.color = !last_BtcPrice || last_BtcPrice === Btc_price ? "black" : Btcprice >last_BtcPrice ? "green" : "red";
     last_BtcPrice = Btcprice;
 };
+
+// HAMBURGER MENU
+const hamMenu = document.querySelector(".ham_menu");
+const ul_class = document.querySelector(".ul_class");
+
+hamMenu.addEventListener("click",()=>{
+    hamMenu.classList.toggle("active");
+    ul_class.classList.toggle("active");
+})
